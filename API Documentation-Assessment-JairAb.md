@@ -2,23 +2,23 @@
 The REST API we're discussing provides endpoints for managing employee data. It allows clients to perform CRUD (Create, Read, Update, Delete) operations on employee records. Below are the key features and functionalities:
 
 ### 1. All Employee Retrieval (GET /employee/):
-  -This endpoint retrieves information about all employee on a specific company database.
-  -The client sends a GET request with the employee ID as a path parameter.
-  -The server responds with the employee’s details (such as name, department, contact information, etc.) in JSON format.
-  -If the employee with the specified ID does not exist, the API returns an appropriate error response (e.g., 404 Not Found).
+ - This endpoint retrieves information about all employee on a specific company database.
+ - The client sends a GET request with the employee ID as a path parameter.
+ - The server responds with the employee’s details (such as name, department, contact information, etc.) in JSON format.
+ - If the employee with the specified ID does not exist, the API returns an appropriate error response (e.g., 404 Not Found).
 
 ### 2. Employee Retrieval (GET /employee/{id}):
-  -This endpoint retrieves information about a specific employee based on their unique identifier (id).
-  -The client sends a GET request with the employee ID as a path parameter.
-  -The server responds with the employee’s details (such as name, department, contact information, etc.) in JSON format.
-  -If the employee with the specified ID does not exist, the API returns an appropriate error response (e.g., 404 Not Found).
+  - This endpoint retrieves information about a specific employee based on their unique identifier (id).
+  - The client sends a GET request with the employee ID as a path parameter.
+  - The server responds with the employee’s details (such as name, department, contact information, etc.) in JSON format.
+  - If the employee with the specified ID does not exist, the API returns an appropriate error response (e.g., 404 Not Found).
 
 ### 3. Employee Creation (POST /create):
-  -Clients can use this endpoint to create a new employee record.
-  -The client sends a POST request with a JSON payload containing employee details (e.g., name, job title, salary, etc.).
-  -The server validates the input data, creates a new employee entry in the database, and assigns a unique ID.
-  -The API responds with a success message (e.g., 201 Created) along with the newly created employee’s ID.
-  -If the input data is invalid or incomplete, the API returns an error response (e.g., 400 Bad Request).
+  - Clients can use this endpoint to create a new employee record.
+  - The client sends a POST request with a JSON payload containing employee details (e.g., name, job title, salary, etc.).
+  - The server validates the input data, creates a new employee entry in the database, and assigns a unique ID.
+  - The API responds with a success message (e.g., 201 Created) along with the newly created employee’s ID.
+  - If the input data is invalid or incomplete, the API returns an error response (e.g., 400 Bad Request).
 
 ### 4. Employee Update (PUT /employee/{id}) 
  - These endpoints allow clients to update or delete an existing employee record.
@@ -31,7 +31,8 @@ The REST API we're discussing provides endpoints for managing employee data. It 
  - If the specified employee ID is not found during update or delete operations,   appropriate error responses are returned.
 
 ### Table
-| Route     |    Method   |  Type  |    Full Route                                       |    Description                  | 
+| Route     |    Method   |  Type  |    Full Route                                       |    Description                 |
+| ---------- | -----------|| ----- | --------------------------------------------------- | ------------------------------- |
 | /employee |    GET      |  JSON  | https://dummy.restapiexample.com/api/v1/employees   |   Get all employee data         |
 | Route     |    GET      |  JSON  | https://dummy.restapiexample.com/api/v1/employee/1  |   Get a single employee data    |
 | Route     |    POST     |  JSON  | https://dummy.restapiexample.com/api/v1/create      |   Create new record in database |
@@ -214,62 +215,62 @@ Dont forget the status codes responses:
 
 #### 3. 3×× Redirection
 
--300 Multiple Choices
--301 Moved Permanently
--302 Found
--303 See Other
--304 Not Modified
--305 Use Proxy
--307 Temporary Redirect
--308 Permanent Redirect
+- 300 Multiple Choices
+- 301 Moved Permanently
+- 302 Found
+- 303 See Other
+- 304 Not Modified
+- 305 Use Proxy
+- 307 Temporary Redirect
+- 308 Permanent Redirect
 
 #### 4. 4×× Client Error
 
--400 Bad Request
--401 Unauthorized
--402 Payment Required
--403 Forbidden
--404 Not Found
--405 Method Not Allowed
--406 Not Acceptable
--407 Proxy Authentication Required
--408 Request Timeout
--409 Conflict
--410 Gone
--411 Length Required
--412 Precondition Failed
--413 Payload Too Large
--414 Request-URI Too Long
--415 Unsupported Media Type
--416 Requested Range Not Satisfiable
--417 Expectation Failed
--418 I’m a teapot
--421 Misdirected Request
--422 Unprocessable Entity
--423 Locked
--424 Failed Dependency
--426 Upgrade Required
--428 Precondition Required
--429 Too Many Requests
--431 Request Header Fields Too Large
--444 Connection Closed Without Response
--451 Unavailable For Legal Reasons
--499 Client Closed Request
+- 400 Bad Request
+- 401 Unauthorized
+- 402 Payment Required
+- 403 Forbidden
+- 404 Not Found
+- 405 Method Not Allowed
+- 406 Not Acceptable
+- 407 Proxy Authentication Required
+- 408 Request Timeout
+- 409 Conflict
+- 410 Gone
+- 411 Length Required
+- 412 Precondition Failed
+- 413 Payload Too Large
+- 414 Request-URI Too Long
+- 415 Unsupported Media Type
+- 416 Requested Range Not Satisfiable
+- 417 Expectation Failed
+- 418 I’m a teapot
+- 421 Misdirected Request
+- 422 Unprocessable Entity
+- 423 Locked
+- 424 Failed Dependency
+- 426 Upgrade Required
+- 428 Precondition Required
+- 429 Too Many Requests
+- 431 Request Header Fields Too Large
+- 444 Connection Closed Without Response
+- 451 Unavailable For Legal Reasons
+- 499 Client Closed Request
 
 #### 5×× Server Error
 
--500 Internal Server Error
--501 Not Implemented
--502 Bad Gateway
--503 Service Unavailable
--504 Gateway Timeout
--505 HTTP Version Not Supported
--506 Variant Also Negotiates
--507 Insufficient Storage
--508 Loop Detected
--510 Not Extended
--511 Network Authentication Required
--599 Network Connect Timeout Error
+- 500 Internal Server Error
+- 501 Not Implemented
+- 502 Bad Gateway
+- 503 Service Unavailable
+- 504 Gateway Timeout
+- 505 HTTP Version Not Supported
+- 506 Variant Also Negotiates
+- 507 Insufficient Storage
+- 508 Loop Detected
+- 510 Not Extended
+- 511 Network Authentication Required
+- 599 Network Connect Timeout Error
  
 #### For more information and in-depth, visit:
   [RESTfulapi]https://restfulapi.net/http-status-codes/
