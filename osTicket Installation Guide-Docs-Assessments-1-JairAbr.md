@@ -29,7 +29,7 @@ Here’s a detailed explanation of why the documentation was arranged in this or
 
 By following these content guidelines and best practices, the documentation ensures users can efficiently navigate through the installation process, addressing each critical step in a logical and user-friendly manner. -->
 # osTicket Installation Guide
--osTicket comes with its own web-based installer to help guide you through the installation process without the frustration. While the installer provides step by step guide during the installation process, it's important and helpful to have general knowledge about Web servers, PHP and MySQL.
+osTicket comes with its own web-based installer to help guide you through the installation process without the frustration. While the installer provides step by step guide during the installation process, it's important and helpful to have general knowledge about Web servers, PHP and MySQL.
 
 ## Prerequisites
 - Apache/LiteSpeed/IIS with URL Rewrite
