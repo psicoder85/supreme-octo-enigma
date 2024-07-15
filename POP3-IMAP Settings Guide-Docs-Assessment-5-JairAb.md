@@ -57,11 +57,11 @@ Polling must be scheduled for repeated execution. Depending on your hosting envi
 
 ### Recurring Tasks Scheduler (Cron Job)
 
-  -For Unix systems, add an entry to the crontab file:
+  - For Unix systems, add an entry to the crontab file:
       ```shell
        */5 * * * * nobody /path/to/php /path/to/api/cron.php
 
- -For Windows, add a scheduled task:
+ - For Windows, add a scheduled task:
      ```shell
         "c:\php\bin\php.exe c:\website\osticket\api\cron.php"
 
